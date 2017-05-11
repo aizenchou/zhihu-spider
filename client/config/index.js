@@ -3,6 +3,7 @@ var path = require('path')
 
 module.exports = {
   build: {
+    serverRoot: 'prod server address',
     env: require('./prod.env'),
     index: path.resolve(__dirname, '../dist/index.html'),
     assetsRoot: path.resolve(__dirname, '../dist'),
@@ -22,6 +23,7 @@ module.exports = {
     bundleAnalyzerReport: process.env.npm_config_report
   },
   dev: {
+    serverRoot: 'http://127.0.0.1:3000',
     env: require('./dev.env'),
     port: 7788,
     autoOpenBrowser: true,
